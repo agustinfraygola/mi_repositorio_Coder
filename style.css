@@ -1,0 +1,67 @@
+body {
+    background: repeating-linear-gradient(blue, blue 20px, white 20px, white 25px);
+    display:grid;
+    grid-template-rows: 8% 3fr 2fr;
+}
+
+.RowA {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.RowB {
+    text-align: center;;
+}
+
+.titulo {
+    background-color: yellow;
+    text-align: center;
+}
+
+.transformacion {
+    display: flex;
+    justify-content: center;
+    border: 5px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    font-size: 30px;
+    background: yellow;
+    transform: skew(10deg,10deg);
+    position: absolute;
+    top:15%;
+    left: 38%;
+    
+}
+
+.animacionLeft {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:15%;
+    left:10%;
+    transform: translate(-50%, -50%);
+    animation: rotation 4s infinite linear;
+}
+
+.animacionRight {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:15%;
+    left:70%;
+    transform: translate(-50%, -50%);
+    animation: rotation 4s infinite linear;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);    
+    }
+    to {
+        transform: rotate(359deg);
+    }
+      
+}
